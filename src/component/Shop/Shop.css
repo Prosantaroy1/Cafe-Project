@@ -1,0 +1,11 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 12px;
+    max-width: 1180px;
+    margin: auto;
+    margin-top: 30px;
+}
+.card-container{
+    background-color: aquamarine;
+}
