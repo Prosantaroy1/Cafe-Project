@@ -5,9 +5,10 @@
     max-width: 1120px;
     margin: auto;
     margin-top: 30px;
+    
 }
 .products-container{
-    background-color: blueviolet;
+    background-color: white;
 }
 .card-container{
     background-color: aquamarine;
