@@ -2,10 +2,10 @@ import React from 'react';
 import './Product.css'
 import icon from '../../img/bookmark.svg'
 
-const Product = (props) => {
+const Product = ({product, handleTime}) => {
     //console.log(props.product);
-    const {name, tag, title, img, date, logo, time} =props.product;
-    const handleToAdd = props.handleToAdd;
+    const {name, tag, title, img, date, logo, time} = product;
+    
     return (
         <div className='product'>
             <img src={img} alt='thamble'/>
@@ -27,7 +27,7 @@ const Product = (props) => {
             </div>
             <h2 className='title-description'>{title}</h2>
             <p className='tag'>{tag}</p>
-            <a href='#' className='link'>Mark as read</a>
+            <a onClick={()=> handleTime(time)} href='#' className='link'>Mark as read</a>
             <hr className='border'/>
         </div>
     );
