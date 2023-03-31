@@ -1,3 +1,15 @@
 .card-list{
     padding: 10px;
+    background: rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    margin-top: 10px;
+    height: 100vh;
+}
+.time-set{
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    background: rgba(96, 71, 236, 0.1);
+    border: 1px solid #6047EC;
+    border-radius: 8px;
 }

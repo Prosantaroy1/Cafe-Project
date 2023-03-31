@@ -3,7 +3,7 @@ import './Product.css'
 import icon from '../../img/bookmark.svg'
 
 const Product = (props) => {
-    console.log(props.product);
+    //console.log(props.product);
     const {name, tag, title, img, date, logo, time} =props.product;
     const handleToAdd = props.handleToAdd;
     return (
