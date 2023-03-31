@@ -1,8 +1,11 @@
 import React from 'react';
 import './Product.css'
+import icon from '../../img/bookmark.svg'
+
 const Product = (props) => {
     console.log(props.product);
     const {name, tag, title, img, date, logo, time} =props.product;
+    const handleToAdd = props.handleToAdd;
     return (
         <div className='product'>
             <img src={img} alt='thamble'/>
@@ -15,7 +18,11 @@ const Product = (props) => {
                     </div>
                 </div>
                 <div className='part-2'>
-                    <p>{time} min read</p>
+                    <p className='btn'>{time} min read 
+                      <img  className='btn-img' 
+                      onClick={()=> handleToAdd(handleToAdd)}
+                      src={icon} alt='btn-icon'/>
+                    </p>
                 </div>
             </div>
             <h2 className='title-description'>{title}</h2>
