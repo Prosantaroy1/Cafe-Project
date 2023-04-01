@@ -1,0 +1,13 @@
+.Question-container{
+    max-width: 1120px;
+    margin: auto;
+}
+.Question-container h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: chartreuse;
+    font-size: 28px;
+}
+.title{
+    color: crimson;
+}

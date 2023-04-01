@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { addToDb } from '../../utilities/fakedb';
 import Card from '../Card/Card';
 import Product from '../Product/Product';
+import Question from '../Question/Question';
 import './Shop.css'
 
 const Shop = () => {
@@ -37,11 +38,12 @@ const Shop = () => {
         //addToDb(product.id);
      
     }
-    console.log(card);
+    //console.log(card);
     return (
-        <div className='shop-container'>
-            <div className='products-container'>
-            {
+        <div className='shop-main'>
+          <div className='shop-container'>
+             <div className='products-container'>
+             {
                     products.map(product => <Product
                     key={product.id}
                     product={product}
@@ -53,7 +55,12 @@ const Shop = () => {
             <div className='card-container'>
                 <Card readTime={readTime} card={card}></Card>
             </div>
+            </div>
+            <div className='Question'>
+                <Question></Question>
+            </div>
         </div>
+        
     );
 };
 
