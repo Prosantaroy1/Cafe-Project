@@ -5,6 +5,7 @@ import Product from '../Product/Product';
 import Question from '../Question/Question';
 import './Shop.css'
 
+
 const Shop = () => {
     const [products, setProducts] = useState([])
     useEffect(()=>{
@@ -38,9 +39,11 @@ const Shop = () => {
         //addToDb(product.id);
      
     }
+    
     //console.log(card);
     return (
         <div className='shop-main'>
+          
           <div className='shop-container'>
              <div className='products-container'>
              {

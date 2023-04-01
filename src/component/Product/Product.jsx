@@ -1,12 +1,15 @@
 import React from 'react';
 import './Product.css'
 import icon from '../../img/bookmark.svg'
-import Card from '../Card/Card';
+//toasty add
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Product = ({product, handleTime, handleToAdd}) => {
     //console.log(props.product);
     const {name, tag, title, img, date, logo, time} = product;
-    
+
+    const notify = () => toast("Already Click your");
     return (
         <div className='product'>
             <img src={img} alt='thamble'/>
@@ -21,8 +24,9 @@ const Product = ({product, handleTime, handleToAdd}) => {
                 <div className='part-2'>
                     <p className='btn'>{time} min read 
                       <img  className='btn-img' 
-                      onClick={()=> handleToAdd(product)}
+                      onClick={()=> handleToAdd(product, notify() )}
                       src={icon} alt='btn-icon'/>
+                      <ToastContainer />
                     </p>
                 </div>
             </div>
