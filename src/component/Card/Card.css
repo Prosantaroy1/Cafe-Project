@@ -1,9 +1,13 @@
+.card{
+    position: sticky;
+    top: 0;
+}
 .card-list{
     padding: 10px;
     background: rgba(17, 17, 17, 0.05);
     border-radius: 8px;
     margin-top: 10px;
-    height: 100vh;
+    
 }
 .card-list h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
