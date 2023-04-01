@@ -1,23 +1,23 @@
 import React from 'react';
+import Product from '../Product/Product';
 import './Card.css'
-const Card = ({card, readTime}) => {
-    //console.log(card);
-    let totalTime = 0;
-    for(const product of card){
-        //console.log(product);
-        
-        totalTime = totalTime + product.time;
-        //console.log(totalTime);
-    }
-    
+const Card = ({readTime, card}) => {
+   console.log(card);
     return (
         <div className='card'>
             <div className='time-set'>
               <h4>Spent time on read: {readTime} min</h4>
             </div>
             <div className='card-list'>
-              <h3>Bookmarked Blogs: {card.length}</h3>
-              <p>this is man hangri</p>
+             <h3>Bookmarked Blogs: {card.length}</h3> 
+
+             {
+                card.map(Card => {
+                 return<div className='bookmark-click'>
+                    <h3>{Card.title}</h3>
+                 </div>
+                })
+            }
             </div>
         </div>
     );

@@ -1,8 +1,9 @@
 import React from 'react';
 import './Product.css'
 import icon from '../../img/bookmark.svg'
+import Card from '../Card/Card';
 
-const Product = ({product, handleTime}) => {
+const Product = ({product, handleTime, handleToAdd}) => {
     //console.log(props.product);
     const {name, tag, title, img, date, logo, time} = product;
     
@@ -20,7 +21,7 @@ const Product = ({product, handleTime}) => {
                 <div className='part-2'>
                     <p className='btn'>{time} min read 
                       <img  className='btn-img' 
-                      onClick={()=> handleToAdd(handleToAdd)}
+                      onClick={()=> handleToAdd(product)}
                       src={icon} alt='btn-icon'/>
                     </p>
                 </div>

@@ -29,14 +29,15 @@ const Shop = () => {
     }
     //BookMark part
     const [card, setCard] =useState([]);
+    //console.log(card)
     const handleToAdd = (product) =>{
-        //console.log('product');
+       // console.log(product);
         const newCard = [...card, product];
         setCard(newCard);
         //addToDb(product.id);
-        console.log(newCard);
-    
+     
     }
+    console.log(card);
     return (
         <div className='shop-container'>
             <div className='products-container'>
@@ -50,7 +51,7 @@ const Shop = () => {
                 }
             </div>
             <div className='card-container'>
-                <Card card={card} readTime={readTime}></Card>
+                <Card readTime={readTime} card={card}></Card>
             </div>
         </div>
     );

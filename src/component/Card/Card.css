@@ -5,6 +5,10 @@
     margin-top: 10px;
     height: 100vh;
 }
+.card-list h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
 .time-set{
     font-size: 20px;
     color: black;
@@ -12,4 +16,18 @@
     border: 1px solid #6047EC;
     border-radius: 8px;
     padding: 8px;
+}
+.time-set h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+}
+.bookmark-click{
+    border:  1px solid #fff;
+    background-color: #fff;
+    border-radius: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 0;
+    font-size: 13px;
+    padding: 5px;
 }
